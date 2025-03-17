@@ -128,13 +128,15 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 /* DESKTOP 1140PX */
-.container {
-  width: auto;
-  max-width: 1140px;
-}
-.row {
-  flex-wrap: wrap;
-  row-gap: 5rem;
+@media only screen and (max-width: 1140px) {
+  .container {
+    width: auto;
+    max-width: 1140px;
+  }
+  .row {
+    flex-wrap: wrap;
+    row-gap: 5rem;
+  }
 }
 /* TABLET 768PX */
 @media only screen and (max-width: 768px) {
@@ -147,6 +149,7 @@ img {
   .container {
     max-width: 480px;
   }
+
   .lessons .col {
     width: 100%;
     display: block;
